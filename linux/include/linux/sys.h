@@ -1,65 +1,65 @@
-extern int sys_setup();
-extern int sys_exit();
-extern int sys_fork();
-extern int sys_read();
-extern int sys_write();
-extern int sys_open();
-extern int sys_close();
-extern int sys_waitpid();
-extern int sys_creat();
-extern int sys_link();
-extern int sys_unlink();
-extern int sys_execve();
-extern int sys_chdir();
-extern int sys_time();
-extern int sys_mknod();
-extern int sys_chmod();
-extern int sys_chown();
+extern int sys_setup(); // 系统启动初始化设置函数
+extern int sys_exit();  // 程序退出
+extern int sys_fork();  // 创建进程
+extern int sys_read();  // 读文件
+extern int sys_write(); // 写文件
+extern int sys_open();  // 打开文件
+extern int sys_close(); // 关闭文件
+extern int sys_waitpid();//等待进程终止
+extern int sys_creat();  //创建文件
+extern int sys_link();   //创建一个文件的硬连接
+extern int sys_unlink(); //删除一个文件名
+extern int sys_execve(); //执行程序
+extern int sys_chdir();  //更改当前目录
+extern int sys_time();   //取当前时间
+extern int sys_mknod();  //建立块/字符特殊文件
+extern int sys_chmod();  //修改文件属性
+extern int sys_chown();  //修改文件宿主和所属组
 extern int sys_break();
-extern int sys_stat();
-extern int sys_lseek();
-extern int sys_getpid();
-extern int sys_mount();
-extern int sys_umount();
-extern int sys_setuid();
-extern int sys_getuid();
-extern int sys_stime();
-extern int sys_ptrace();
-extern int sys_alarm();
-extern int sys_fstat();
-extern int sys_pause();
-extern int sys_utime();
-extern int sys_stty();
-extern int sys_gtty();
-extern int sys_access();
-extern int sys_nice();
-extern int sys_ftime();
-extern int sys_sync();
-extern int sys_kill();
-extern int sys_rename();
-extern int sys_mkdir();
-extern int sys_rmdir();
-extern int sys_dup();
-extern int sys_pipe();
-extern int sys_times();
-extern int sys_prof();
-extern int sys_brk();
-extern int sys_setgid();
-extern int sys_getgid();
-extern int sys_signal();
-extern int sys_geteuid();
+extern int sys_stat();   //使用路径名取文件的状态信息
+extern int sys_lseek();  //重新定位读/写文件偏移
+extern int sys_getpid(); //取进程id
+extern int sys_mount();  //安装文件系统
+extern int sys_umount(); //卸载文件系统
+extern int sys_setuid(); //设置进程用户id
+extern int sys_getuid(); //取进程用户ID
+extern int sys_stime();  //设置系统时间日期
+extern int sys_ptrace(); //程序调试
+extern int sys_alarm();  //设置报警
+extern int sys_fstat();  //使用文件句柄获取文件状态信息
+extern int sys_pause();  //暂停进程运行
+extern int sys_utime();  //改变文件的访问和修改时间
+extern int sys_stty();   //修改终端行设置
+extern int sys_gtty();   //获取终端行设置信息
+extern int sys_access(); //检查用户对一个文件的访问权限
+extern int sys_nice();   //设置进程执行优先级
+extern int sys_ftime();  //取日期和时间
+extern int sys_sync();   //同步高速缓冲与设备中的数据
+extern int sys_kill();   //终止一个进程
+extern int sys_rename(); //更改文件名
+extern int sys_mkdir();  //创建目录
+extern int sys_rmdir();  //删除目录
+extern int sys_dup();    //复制文件句柄
+extern int sys_pipe();   //创建管道
+extern int sys_times();  //取运行时间
+extern int sys_prof();   //程序执行时间区域
+extern int sys_brk();    //修改数据段长度
+extern int sys_setgid(); //设置进程组id
+extern int sys_getgid(); //取进程组id
+extern int sys_signal(); //信号处理
+extern int sys_geteuid();//
 extern int sys_getegid();
 extern int sys_acct();
 extern int sys_phys();
 extern int sys_lock();
-extern int sys_ioctl();
-extern int sys_fcntl();
+extern int sys_ioctl(); //设备控制
+extern int sys_fcntl(); //文件句柄操作
 extern int sys_mpx();
 extern int sys_setpgid();
 extern int sys_ulimit();
-extern int sys_uname();
+extern int sys_uname(); //显示系统信息
 extern int sys_umask();
-extern int sys_chroot();
+extern int sys_chroot(); //改变根系统
 extern int sys_ustat();
 extern int sys_dup2();
 extern int sys_getppid();
